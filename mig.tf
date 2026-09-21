@@ -93,6 +93,8 @@ module "mig1" {
   subnetwork = google_compute_subnetwork.group1.self_link
   
   # TODO 5: Add min_replicas parameter for GitOps update (Task 3)
+  target_size       = 3 
+
 }
 
 
