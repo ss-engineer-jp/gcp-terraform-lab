@@ -77,9 +77,6 @@ module "mig1" {
   region            = var.group1_region
   hostname          = "${var.network_prefix}-group1"
   
-  # TODO 3: Specify the target size for the managed instance group
-  target_size       = "var.target_size"
-  
   autoscaling_enabled = true
   autoscaling_cpu = [{
     target : 0.6
